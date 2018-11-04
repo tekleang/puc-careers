@@ -1,0 +1,318 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+// header style
+.header{
+  position: absolute;
+  top: 15px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .group-header{
+    color: #fff;
+    display: flex;
+    width: 80%;
+    margin-top: 30px;
+    top:0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    // background: #0078D7;
+    .main-box{
+      width: 100%;
+      margin: 0 auto;
+      // padding: 0 20px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .logo{
+        flex: 1;
+        display: flex;
+        align-items: center;
+        .box-img{
+          width: 100px;
+          height: 100px;
+          img{width: 100%;height: 100%;}
+        }
+      }
+      .menu{
+
+
+        ul{
+          list-style: none;
+          li{
+            display: inline-block;
+            padding: 15px;
+            a{
+              color: #fff;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// main container
+body{margin: 0px;width: 100%;}
+.main-body{width: 100%;margin: 0px;padding: 0;}
+.banner{
+  position: relative;
+  top: 0;
+  // background: red;
+  height: 500px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  .box-img{
+    position: absolute;
+    display: flex;
+    flex-direction: flex-end;
+    width: 100%;
+    height: 500px;
+    img{width: 100%;height: 100%;object-fit: cover;}
+  }
+  .group-banner{
+    width: 80%;
+    display: flex;
+    .main-banner{
+      .box{
+        display: flex;
+        .box-img-text{
+          margin-top: 10%;
+          position: absolute;
+          height: 500px;
+          // border: 1px solid #333;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          flex: 1;
+          margin-top: 15%;
+          .box-text{
+            position: relative;
+            z-index: 1;
+            width: 538px;
+            height:100%;
+            h2{margin: 0px;}
+            .search-container{
+              padding-top: 50px;
+              input{
+                width: 300px;
+                height: 30px;
+                border-radius: 15px;
+                padding-left: 20px;
+              }
+            }
+            p{
+              margin: 0px;
+              padding-right: 30%;
+              line-height: 25px;
+              margin-top: 30px;
+            }
+          }
+          .box-img{
+            width: 538px;
+            height:100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Job Announcment
+.announment{
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  .group-announment{
+    width: 80%;
+    h2{text-align: center;margin: 0;}
+    padding-top: 50px;
+    .main-box{
+      padding-top: 30px;
+      .box{
+        display: flex;
+        .box-img-text{
+          width: 270px;
+          margin: 15px;
+          // border-radius: 10%;
+          height: 220px;
+          // border: 1px solid red;
+          background: #98C7F7;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          flex: 1;
+          .box-img{
+            display: flex;
+            justify-content: center;
+            width: 150px;
+            height: 100px;
+            flex-wrap: wrap;
+            img{
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .box-text{
+            padding-top: 25px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// statistic
+.statistic{
+  margin-top: 50px;
+  background: #333;
+  height: 250px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  overflow: hidden;
+  .group-statistic{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .main-box{
+      display: flex;
+      .box{
+        display: flex;
+        .box-img-text{
+          padding-top: 20px;
+          width: 270px;
+          margin: 5px;
+          border-radius: 10%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          flex: 1;
+          .box-img{
+            display: flex;
+            justify-content: center;
+            width: 120px;
+            height: 120px;
+            flex-wrap: wrap;
+            background: #00F2FF;
+            border-radius: 50%;
+            img{
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+          .box-text{
+            padding-top: 10px;
+            text-align: center;
+            h2{color: #fff;line-height: 30px;margin: 0px;}
+          }
+        }
+      }
+    }
+  }
+}
+
+// client partner
+.partner{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  .group-partner{
+    padding-top: 50px;
+    width: 80%;
+    h2{text-align: center;margin: 0px;}
+    .main-box{
+      padding-top: 30px;
+      .box{
+        display: flex;
+        padding-top: 5px;
+        .box-img-text{
+          width: 170px;
+          height: 100px;
+          margin: 5px;
+          border: 1px solid red;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex: 1;
+          overflow: hidden;
+          .box-img{
+            width: 100%;
+            height: 100%;
+            img{width: 100%;height: 100%;}
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// footer
+.footer{
+  display: flex;
+  justify-content: center;
+  // align-items: flex-end;
+  background: #333;
+  height: 300px;
+  width: 100%;
+  margin-top: 50px;
+  .group-footer{
+    display: flex;
+    width: 80%;
+    .main-box{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      .box-footer{
+        width: 100%;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .box-img{
+          width: 100px;
+          height: auto;
+          border-radius: 50%;
+          img{width: 100%;height: 100%;}
+        }
+        p{
+          text-align: center;
+          padding-left: 20%;
+          padding-right: 20%;
+          color: #fff;
+        }
+      }
+      .box-dev-by{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        bottom: 10px;
+        align-items: flex-end;
+        p{
+          font-size: 12px;
+          text-align: center;
+          color: #fff;
+
+        }
+      }
+    }
+  }
+
+}
